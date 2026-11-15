@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation */
+
+header {
+    background-color: #142b4a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+/* Home Section */
+
+.hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+
+    padding: 120px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.search-box {
+    margin-top: 30px;
+}
+
+.search-box input,
+.search-box select {
+    padding: 13px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #f39c12;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d68910;
+}
+
+/* Properties */
+
+.properties {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.properties h2 {
+    margin-bottom: 30px;
+}
+
+.property-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.property-card {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.property-card h3 {
+    margin: 15px 0;
+}
+
+.property-card p {
+    margin: 10px 0;
+}
+
+.property-card h4 {
+    color: green;
+    margin: 10px;
+}
+
+/* About */
+
+.about {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #e8eef5;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #142b4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .search-box input,
+    .search-box select {
+        width: 90%;
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
